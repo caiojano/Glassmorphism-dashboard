@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #684ddf;
+    font-weight:600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+h2,
+p{
+    color: #7058db;
+    font-weight:600;
+    opacity: 0.8; 
+}
+h3{
+    color: #140936;
+    font-size: 180%;
+    opacity: 0.8;
+}
+
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to left top,#746aa2,#140936);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background:  linear-gradient(to right bottom,
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,0.2));
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(7px);
+    display: flex;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    background: white;
+    background:  linear-gradient(to right bottom,
+    rgba(202,0,107,1),
+    rgba(255,215,111,1));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle4,
+.circle5,
+.circle6 {
+    background: white;
+    background:  linear-gradient(to right bottom,
+    rgba(202,0,107,1),
+    rgba(255,215,111,1));
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1{
+    top: 20%;
+    left: 10%
+}
+.circle2{
+    top: 5%;
+    right: 10%
+}
+.circle3{
+    bottom: 5%; 
+    right: 40%
+}
+.circle4{
+    top: 50%;
+    left: 45%
+}
+.circle5{
+    top: 30%;
+    right: 35%
+}
+.circle6{
+    bottom: 5%; 
+    right: 8%
+}
+
+.dashboard{
+    background:  linear-gradient(to right bottom,
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.1));
+    border-radius: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+   
+}
+
+.link1,
+.link2,
+.link3{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+.link1 h2,
+.link2 h2,
+.link3 h2{
+    padding: 0rem 2rem;
+}
+
+.projects{
+    flex: 2;
+}
+.acompanhe {
+    background: linear-gradient(to left top,#746aa2,#140936);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+  }
+  
+.acompanhe img {
+    position: absolute;
+    width: 35%;
+    top: -10%;
+    right: 10%;
+  }
+.acompanhe h2 {
+    width: 40%;
+    color: white;
+    font-weight: 600;
+  }
+
+.status{
+    margin-bottom: 3rem;
+}
+
+.status input{
+    background:  linear-gradient(to right bottom,
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,0.2));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.projects {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card1,
+.card2,
+.card3{
+    display: flex;
+    background: linear-gradient(
+        to left top,
+        rgba(255,255,255,0.2),
+        rgba(255,255,255,0.65)
+        );
+        border-radius: 1rem;
+        margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122, 0.4);
+    justify-content: space-between;
+}
+
+.progress{
+    background: linear-gradient(to left top,#746aa2,#140936);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.porcentagem{
+    font-weight: bold;
+    background: linear-gradient(
+        to right top,
+        #a49bce,
+        #140936);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
